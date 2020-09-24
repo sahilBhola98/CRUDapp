@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CRUDapp</string>
+
+    <string name="instructions">Enter a book name pr a part of book name pr just some text from book to find fukk book title and
+    author</string>
+    <string name="button_text">Search Books</string>
+    <string name="input_hint">Enter a book title</string>
 </resources>
