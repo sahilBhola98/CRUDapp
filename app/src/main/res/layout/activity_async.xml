@@ -13,20 +13,47 @@
         android:layout_height="match_parent"
 
         android:layout_marginTop="112dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginRight="183dp"
         android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/buttonStart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonTask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="58dp"
-        android:layout_marginEnd="101dp"
-        android:layout_marginRight="101dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginRight="208dp"
         android:onClick="taskClick"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/progressBarDownload" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:text="Start Service"
+        android:onClick="taskClick"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonStop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/progressBarDownload"
+        />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="259dp"
+        android:onClick="taskClick"
+        android:text="Stop Service"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTask" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -57,7 +57,7 @@ public class SAO  {
         String where =" _id = ?";
         String[] whereArgs = {FeedEntry._ID};
         SQLiteDatabase db=helper.getWritableDatabase();
-        boolean updated = db.update(FeedEntry.TABLE_NAME,values,null,null)>0;
+        boolean updated = db.update(FeedEntry.TABLE_NAME,values,null,null   )>0;
                 db.close();
                 return updated;
     }
